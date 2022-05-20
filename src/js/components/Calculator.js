@@ -48,13 +48,13 @@ export default function Calculator() {
               }}
               setDisabled={(newDisabled) => {
                 setRows(
-                  rows.map((r) =>
-                    r === row ? { ...r, disabled: newDisabled } : r
-                  )
+                  rows.map((r) => (r === row ? { ...r, disabled: newDisabled } : r))
                 );
               }}
               deleteRow={() => {
-                setRows(rows.filter((r) => r !== row));
+                setRows(
+                    rows.filter((r) => r !== row)
+                );
               }}
             />
           ))}
