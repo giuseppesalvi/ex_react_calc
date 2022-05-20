@@ -1,6 +1,5 @@
 require('file-loader?name=[name].[ext]!../index.html');
 import '../css/style.scss';
-import {Title} from "./components/Title";
 
 class App extends React.Component {
   constructor(props) {
@@ -12,7 +11,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="page-wrap">
-        <Title>React Version: {this.state.version}</Title>
+        {/* ... */}
     	</div>
     )
   }
