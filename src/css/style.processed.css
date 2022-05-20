@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  background-color: #ededed;
+  color: #333;
+  font-family: 'Roboto', Arial, sans-serif;
+  padding:3rem 4rem;
+}
+button{width:6rem;height:3rem}
+input{padding-left:.5rem;padding-right:.5rem}
+

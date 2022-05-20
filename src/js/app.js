@@ -1,5 +1,4 @@
 require("file-loader?name=[name].[ext]!../index.html");
-import "../css/style.scss";
 import Calculator from "./components/Calculator";
 
 class App extends React.Component {
