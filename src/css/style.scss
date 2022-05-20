@@ -1,6 +1,8 @@
 $white: #fff;
 $light-grey: #ededed;
 $grey: #333;
+$padding-x: 4rem;
+$padding-y: 3rem;
 
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -9,4 +11,10 @@ body {
   background-color: $light-grey;
   color:$grey;
   font-family: 'Roboto', Arial, sans-serif;
+  padding: $padding-y $padding-x;
+}
+
+button {
+  width: 6rem;
+  height: 3rem;
 }
