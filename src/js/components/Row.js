@@ -46,7 +46,9 @@ export default function Row({
         type="button"
         className={"btn btn-danger"}
         onClick={() => deleteRow()}
-      >Delete</button>
+      >
+        Delete
+      </button>
     </div>
   );
 }

@@ -20,16 +20,12 @@ export default function Calculator() {
   return (
     <div className="container-fluid my-5">
       <div className="row">
-        <div className="col-12">
+        <div className="col-12 px-0">
           <h2>CALCULATOR</h2>
           <button
             type="button"
             className="btn btn-primary my-2"
             onClick={() => setRows([...rows, newRow()])}
-            // style={{
-            //   width: "6rem",
-            //   height: "3rem",
-            // }}
           >
             Add Row
           </button>
@@ -38,8 +34,8 @@ export default function Calculator() {
             <Row
               key={index}
               sign={row.sign}
-              disabled={row.disabled}
               value={row.value}
+              disabled={row.disabled}
               setSign={(newSign) => {
                 setRows(
                   rows.map((r) => (r === row ? { ...r, sign: newSign } : r))
@@ -62,7 +58,7 @@ export default function Calculator() {
               }}
             />
           ))}
-          <h4 className="my-3">
+          <h4 className="mt-4">
             {`Result = ${rows
               .filter((r) => r.disabled == false)
               .reduce(computeResult, 0)
