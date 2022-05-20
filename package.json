@@ -17,10 +17,6 @@
     "url": "https://github.com/giuseppesalvi/ex_react_calc/issues"
   },
   "homepage": "https://github.com/giuseppesalvi/ex_react_calc#readme",
-  "dependencies": {
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.18.0",
     "@babel/preset-env": "^7.18.0",

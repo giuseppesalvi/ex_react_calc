@@ -1,14 +1,6 @@
 require('file-loader?name=[name].[ext]!../index.html');
-//import React from 'react';
-//import ReactDOM from 'react-dom';
-//import { App } from './App';
 import '../css/style.scss';
-//
-//const appElement = document.getElementById('app');
-//
-//ReactDOM.render(<App />, appElement);
-
-//import Title from './components/Title';
+import {Title} from "./components/Title";
 
 class App extends React.Component {
   constructor(props) {
@@ -20,8 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="page-wrap">
-        {/* <Title>React Version: {this.state.version}</Title> */}
-        <h1>Hello there {new Date().toDateString()}</h1>
+        <Title>React Version: {this.state.version}</Title>
     	</div>
     )
   }
